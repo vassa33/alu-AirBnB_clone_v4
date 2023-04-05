@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""View to handle API actions related to State objects
+"""
+View to handle API actions related to State objects
 """
 
 from api.v1.views import app_views
@@ -11,7 +12,8 @@ from models import storage
 @app_views.route('/states/<state_id>', methods=['GET', 'DELETE', 'PUT'],
                  strict_slashes=False)
 def states_get(state_id=None):
-    """Manipulate State object by state_id, or all objects if
+    """
+    Manipulate State object by state_id, or all objects if
     state_id is None
     """
     from models.state import State
