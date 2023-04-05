@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Places view API request handlers
-"""
+"""Places view API request handlers"""
 
 from api.v1.views import app_views
 from flask import jsonify, abort, request
@@ -16,7 +15,8 @@ from models.amenity import Amenity
                  methods=['POST'],
                  strict_slashes=False)
 def places_search():
-    """Search for place according to parameters
+    """
+    Search for place according to parameters
     in body request
     """
     # POST REQUEST
@@ -76,8 +76,7 @@ def places_search():
                  methods=['GET', 'POST'],
                  strict_slashes=False)
 def places_by_city_requests(city_id):
-    """Perform API requests of places by city
-    """
+    """Perform API requests of places by city"""
     # GET REQUESTS
     if request.method == 'GET':
         # retrieve all places related to specific city, if exists
@@ -130,8 +129,7 @@ def places_by_city_requests(city_id):
                  methods=['GET', 'DELETE', 'PUT'],
                  strict_slashes=False)
 def place_methods(place_id=None):
-    """Perform API requests of on place objects
-    """
+    """Perform API requests of on place objects"""
     # GET REQUESTS
     if request.method == 'GET':
 
