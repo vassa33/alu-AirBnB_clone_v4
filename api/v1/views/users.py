@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""View to handle API actions related to User objects
+"""
+View to handle API actions related to User objects
 """
 
 from api.v1.views import app_views
