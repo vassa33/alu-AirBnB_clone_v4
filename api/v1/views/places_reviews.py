@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""New view for Review objects that handles all default RestFul API actions
+"""
+New view for Review objects that handles all default RestFul API actions
 """
 
 from api.v1.views import app_views
