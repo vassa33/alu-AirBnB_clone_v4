@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""View for API request concerning the place/amenity relationship
+"""
+View for API request concerning the place/amenity relationship
 """
 
 from api.v1.views import app_views
@@ -17,7 +18,8 @@ from os import getenv
                  methods=['GET', 'DELETE', 'POST'],
                  strict_slashes=False)
 def place_amenity_requests(place_id=None, amenity_id=None):
-    """Methods serving API requests for place/amenity
+    """
+    Methods serving API requests for place/amenity
     relationships
     """
     mode = getenv('HBNB_TYPE_STORAGE')
