@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Routings for amenity-related API requests
-"""
+"""Routings for amenity-related API requests"""
 
 from api.v1.views import app_views
 from flask import jsonify, abort, request
@@ -11,8 +10,7 @@ from models import storage
 @app_views.route('/amenities/<amenity_id>', methods=['GET', 'DELETE', 'PUT'],
                  strict_slashes=False)
 def amenity_methods(amenity_id=None):
-    """Handle requests to API for amentities
-    """
+    """Handle requests to API for amentities"""
     from models.amenity import Amenity
     amenities = storage.all(Amenity)
 
